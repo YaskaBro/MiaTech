@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 22</title>
+</head>
+<body>
+    <h1>Le label
+    </h1>
+    <h2>Inserisci il tuo nome e seleziona il tuo tipo di veicolo:
+    </h2>
+    <form action="/action_page.php">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <input type="radio" id="bici" name="veicolo" value="bici">
+        <label for="bici">bici</label><br>
+        <input type="radio" id="auto" name="veicolo" value="auto">
+        <label for="auto">auto</label><br>
+        <input type="radio" id="elicottero" name="veicolo" value="elicottero">
+        <label for="elicottero">elicottero</label><br><br>
+      </form>
+      <h2>Scegli il colore del tuo veicolo
+      </h2>
+      <form action="/action_page.php">
+        <input type="color">
+      </form>
+      <h2>Inserisci il giorno in cui hai acquistato il tuo veicolo
+      </h2>
+      <form action="/action_page.php">
+        <input type="date"><br><br>
+        <input type="submit" value="Submit"><br><br>
+      </form>
+</body>
+</html>
