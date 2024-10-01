@@ -30,3 +30,19 @@ h6 {
 .format-test {
     font-size: 30px;
 }
+
+.colorato {
+    color: chocolate;
+}
+
+.grande {
+    font-size: 50px;
+}
+
+.font {
+    font-family: fantasy;
+}
+
+.destra {
+    text-align: right;
+}
