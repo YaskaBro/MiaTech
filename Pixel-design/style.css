@@ -1,0 +1,12 @@
+* {
+  font-size: 16px;
+}
+
+p {
+  color: red;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+}
