@@ -4,6 +4,9 @@
 
 p {
   color: red;
+}
+
+.square {
   width: 30%;
   padding-bottom: 30%;
 }
