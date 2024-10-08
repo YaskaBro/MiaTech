@@ -1,0 +1,19 @@
+* {
+  font-size: 5px;
+}
+
+.square {
+  font-size: 2px;
+  padding: 10%;
+  margin: 20px;
+  border: 3px;
+  border-color: black;
+  border-style: dotted;
+}
+.classes {
+  font-size: 2rem;
+}
+
+.lorem {
+  font-size: 7em;
+}
