@@ -1,0 +1,29 @@
+* {
+  font-size: 5px;
+}
+
+.square {
+  font-size: 20px;
+  padding: 10%;
+  margin: 20px;
+}
+
+span {
+  border: 3px;
+  border-style: solid;
+  background-color: peru;
+  height: 15px;
+  width: 15px;
+}
+
+#primo {
+  display: inline;
+}
+
+#secondo {
+  display: inline-block;
+}
+
+#terzo {
+  display: block;
+}
