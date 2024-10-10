@@ -1,0 +1,16 @@
+:root{
+  --colore-testo: #ff0000;
+  --spacing: 100px;
+}
+
+.immagine {
+  width: 300px;
+  height: auto;
+  float: right;
+}
+
+.immagine img {
+  width: 100%;
+  float: right;
+}
+
