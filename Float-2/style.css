@@ -1,0 +1,19 @@
+:root{
+  --colore-testo: #ff0000;
+  --spacing: 100px;
+}
+
+.square-immagine {
+  width: 300px;
+  height: auto;
+  float: right;
+}
+
+.square img {
+  width: 100%;
+  float: right;
+}
+
+.lorem {
+  clear: right;
+}
