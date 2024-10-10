@@ -1,18 +1,27 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
 }
 
 header {
   background-color: blue;
+  height: 20%;
 }
 
 .navigationmenu {
   text-align: center;
   background-color: brown;
+  height: 10%;
 }
 
 #content1 {
   width: 20%;
-  display: inline-block;
+  height: 60%;
   background-color: chocolate;
   float: left;
 }
@@ -20,17 +29,19 @@ header {
 #maincontent {
   display: inline-block;
   background-color: greenyellow;
-  width: 60%;
+  width: 60%; 
+  height: 60%;
 }
 
 #content2 {
-  width: 20%;
-  display: inline-block;
+  width: 20%;  
+  height: 60%;
   background-color: aquamarine;
   float: right;
 }
 
 footer {
   clear: both;
-  background-color: blueviolet;
+  background-color: blueviolet; 
+  height: 10%;
 }
