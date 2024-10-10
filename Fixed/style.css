@@ -1,0 +1,33 @@
+nav {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+}
+
+ul {
+  text-align: center;
+  background-color: aqua;
+}
+
+
+li {
+  display: inline;  
+}
+
+p {
+  font-size: 70px;
+}
+#colonna1 {
+  width: 33%;
+  display: inline-block;
+}
+
+#colonna2 {
+  width: 33%;
+  display: inline-block;
+}
+
+#colonna3 {
+  width: 33%;
+  display: inline-block;
+}
