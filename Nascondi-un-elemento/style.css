@@ -1,0 +1,19 @@
+
+#colonna1 {
+  width: 33%;
+  display: inline-block;
+  background-color: chocolate;
+}
+
+#colonna2 {
+  width: 33%;
+  display: inline-block;
+  visibility: hidden;
+  background-color: greenyellow;
+}
+
+#colonna3 {
+  width: 33%;
+  display: inline-block;
+  background-color: aquamarine;
+}
