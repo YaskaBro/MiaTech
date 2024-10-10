@@ -1,0 +1,36 @@
+* {
+}
+
+header {
+  background-color: blue;
+}
+
+.navigationmenu {
+  text-align: center;
+  background-color: brown;
+}
+
+#content1 {
+  width: 20%;
+  display: inline-block;
+  background-color: chocolate;
+  float: left;
+}
+
+#maincontent {
+  display: inline-block;
+  background-color: greenyellow;
+  width: 60%;
+}
+
+#content2 {
+  width: 20%;
+  display: inline-block;
+  background-color: aquamarine;
+  float: right;
+}
+
+footer {
+  clear: both;
+  background-color: blueviolet;
+}
