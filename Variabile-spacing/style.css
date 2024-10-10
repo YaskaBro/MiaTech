@@ -1,0 +1,12 @@
+:root{
+  --colore-testo: #ff0000;
+  --spacing: 100px;
+}
+
+* {
+  color: var(--colore-testo)
+}
+
+p {
+  padding: var(--spacing);
+}
