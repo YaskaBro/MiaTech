@@ -1,0 +1,10 @@
+.flexbox {
+  display: flex;
+  background-color: brown;
+  flex-direction: column;
+  div{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+  }
+}
