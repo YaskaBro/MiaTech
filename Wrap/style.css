@@ -1,0 +1,11 @@
+.flexbox {
+  display: flex;
+  background-color: brown;
+  flex-wrap: wrap;
+  height: 500px;
+  div{
+    background-color: aquamarine;
+    height: 300px;
+    width: 100px;
+  }
+}
