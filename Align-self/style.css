@@ -10,9 +10,14 @@
     margin: 50px;
     border-style: solid;
   }
+
+  .uno {
+    align-self: center;
+  }
   
   .due {
     flex-basis: 400px;
+    align-self: flex-end;
   }
   
 }
