@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  background-color: rgb(21, 11, 205);
+  grid-template-columns: auto auto auto;
+  width: 600px;
+}
+
+.grid-container > div{
+  background-color: rgb(208, 206, 67);
+  border-style: solid;
+  text-align: center;
+  font-size: 40px;
+  height: 100px;
+  margin: 20px ;
+}
