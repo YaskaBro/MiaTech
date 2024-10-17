@@ -1,0 +1,21 @@
+.flexbox {
+  display: flex;
+  background-color: brown;
+  justify-content: center;
+  height: 600px;
+  div{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    border-style: solid;
+  }
+  .uno {
+  }
+  .due {
+    flex-basis: 400px;
+  }
+  .tre {
+  }
+}
+
