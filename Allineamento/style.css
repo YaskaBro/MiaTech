@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  background-color: rgb(21, 11, 205);
+  grid-template-columns: auto auto auto auto auto;
+  width: 1000px;
+  height: 800px;
+  grid-template-rows: 100px 100px;
+  align-content: center;
+}
+
+.grid-container > div{
+  background-color: rgb(208, 206, 67);
+  border-style: solid;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;  
+  align-content: center;
+}
