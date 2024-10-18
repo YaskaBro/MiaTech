@@ -1,0 +1,11 @@
+body {
+  background-color: chocolate;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 769px) {
+  body {
+    background-color: blue;
+  }   
+}
