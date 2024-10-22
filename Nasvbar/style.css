@@ -1,0 +1,24 @@
+body {
+  background-color: rgba(0, 0, 0, 0.464);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: chocolate;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu .menu-item {
+  padding: 30px;
+  background-color: brown;
+}
+nav .menu .menu-item :hover {
+  background-color: #ff0000;
+}
+nav .menu .menu-item button {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
