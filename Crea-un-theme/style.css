@@ -1,12 +1,28 @@
 body {
-  background-color: rgba(224, 212, 212, 0.464);
+  background-color: grey;
+}
+body .light {
+  background-color: rgb(94, 163, 223);
+  color: black;
+}
+body .light a:hover {
+  color: orange;
+}
+body .dark {
+  background-color: #000000;
+  color: white;
+}
+body .dark a:hover {
+  color: yellow;
+}
+body h1 {
+  color: orange;
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(115, 0, 255);
 }
 nav .menu {
   display: flex;
@@ -16,14 +32,7 @@ nav .menu .menu-item {
 }
 nav .menu .menu-item a {
   font-size: 18px;
-  color: rgb(48, 221, 54);
   border: solid;
-  border-color: rgb(48, 221, 54);
   border-radius: 10px;
   padding: 4px;
-}
-nav .menu .menu-item a:hover {
-  color: rgb(195, 0, 255);
-  border-color: rgb(195, 0, 255);
-  background-color: rgba(224, 212, 212, 0.464);
 }/*# sourceMappingURL=style.css.map */
