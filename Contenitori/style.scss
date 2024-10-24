@@ -1,3 +1,5 @@
+$larghezza: 75%;
+
 $primary-color: rgba(0, 0, 0, 0.464);
 $secondary-color: azure;
 
@@ -40,10 +42,10 @@ nav {
   width: 100vw;
 
   .contenitore1  {
-    width: 25%;
+    width: $larghezza / 3;
   }
 
   .contenitore2  {
-    width: 75%;
+    width: $larghezza;
   }
 }

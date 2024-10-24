@@ -1,0 +1,47 @@
+@mixin day-colors {
+  $primary-color: rgba(224, 212, 212, 0.464);
+  $secondary-color: rgb(48, 221, 54);
+  $terzo-colore: rgb(115, 0, 255);
+  $quarto-colore: rgb(195, 0, 255);
+}
+
+@mixin night-colors {
+  $night-primary-color: rgba(224, 212, 212, 0.464);
+  $night-secondary-color: white;
+  $night-terzo-colore: #000000;
+  $night-quarto-colore: yellow;
+}
+
+body {
+  background-color: colors.$primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: colors.$terzo-colore;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: 30px;
+
+      a {
+        font-size: 18px;
+        color: colors.$secondary-color;
+        border: solid;
+        border-color: colors.$secondary-color;
+        border-radius: 10px;
+        padding: 4px;
+      }
+
+      a:hover {
+        color: colors.$quarto-colore;
+        border-color: colors.$quarto-colore;
+        background-color: colors.$primary-color;
+      }
+    }
+  }
+}
