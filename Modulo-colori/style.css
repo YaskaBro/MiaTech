@@ -1,0 +1,29 @@
+body {
+  background-color: rgba(63, 44, 44, 0.464);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 0, 255);
+}
+nav .menu {
+  display: flex;
+}
+nav .menu .menu-item {
+  padding: 30px;
+}
+nav .menu .menu-item a {
+  font-size: 18px;
+  color: rgb(239, 239, 239);
+  border: solid;
+  border-color: rgb(239, 239, 239);
+  border-radius: 10px;
+  padding: 4px;
+}
+nav .menu .menu-item a:hover {
+  color: rgb(195, 0, 255);
+  border-color: rgb(195, 0, 255);
+  background-color: rgba(63, 44, 44, 0.464);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+$primary-color: rgba(0, 0, 0, 0.464);
+$secondary-color: azure;
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: 30px;
+      
+      a {
+        font-size: 18px;
+        color: $secondary-color;
+        border: solid;
+        border-color: $secondary-color;
+        border-radius: 10px;
+        padding: 4px;
+      }
+
+      a:hover {
+        color: #ff0000;
+        border-color: #ff0000;       
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.wrap {
+  display: flex;
+  width: 100vw;
+
+  .contenitore1  {
+    width: 25%;
+  }
+
+  .contenitore2  {
+    width: 75%;
+  }
+}

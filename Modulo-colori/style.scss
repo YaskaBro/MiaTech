@@ -1,0 +1,37 @@
+@use 'colors';
+
+
+
+body {
+  background-color: colors.$primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: colors.$terzo-colore;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: 30px;
+      
+      a {
+        font-size: 18px;
+        color: colors.$secondary-color;
+        border: solid;
+        border-color: colors.$secondary-color;
+        border-radius: 10px;
+        padding: 4px;
+      }
+
+      a:hover {
+        color: colors.$quarto-colore;
+        border-color: colors.$quarto-colore;       
+        background-color: colors.$primary-color;
+      }
+    }
+  }
+}
