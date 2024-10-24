@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(0, 0, 0, 0.464);
+}
+
+nav, nav .menu .menu-item:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+}
+nav .menu, nav .menu .menu-item:last-child .menu {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.464);
+}
+nav .menu .menu-item:last-child {
+  border-color: #333333;
+  border-style: solid;
+}
+nav .menu .menu-item, nav .menu .menu-item:last-child .menu .menu-item {
+  padding: 30px;
+}
+nav .menu .menu-item a, nav .menu .menu-item:last-child .menu .menu-item a {
+  font-size: 18px;
+  color: azure;
+  padding: 4px;
+}
+nav .menu .menu-item a:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+  background-color: rgba(0, 0, 0, 0.464);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+$primary-color: rgba(0, 0, 0, 0.464);
+$secondary-color: azure;
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+
+  .menu {
+    display: flex;
+    background-color: $primary-color;
+
+    .menu-item:last-child {
+      @extend nav;
+      border-color: #333333;
+      border-style: solid;
+    }
+
+    .menu-item {
+      padding: 30px;
+      
+      a {
+        font-size: 18px;
+        color: $secondary-color;
+        padding: 4px;
+      }
+
+      a:hover {
+        color: #ff0000;
+        border-color: #ff0000;       
+        background-color: $primary-color;
+      }
+    }
+  }
+}
