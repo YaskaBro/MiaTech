@@ -25,5 +25,5 @@ nav .menu .menu-item a {
 nav .menu .menu-item a:hover {
   color: #ff0000;
   border-color: #ff0000;
-  background-color: beige;
+  background-color: rgba(0, 0, 0, 0.464);
 }/*# sourceMappingURL=style.css.map */
