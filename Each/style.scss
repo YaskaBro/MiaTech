@@ -1,0 +1,44 @@
+$base-color: rgb(247, 179, 130);
+$primary-color: rgba(0, 0, 0, 0.464);
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: 30px;
+
+      a {
+        font-size: 18px;
+        border: solid;
+        border-radius: 10px;
+        padding: 4px;
+      }
+
+      a:hover {
+        color: #ff0000;
+        border-color: #ff0000;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.wrap {
+  display: flex;
+}
+
+@each $color in lightgray, burlywood, sienna, plum {
+  .colr_#{$color} {
+  color: #{$color};
+  }
+  }

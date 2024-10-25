@@ -1,0 +1,47 @@
+body {
+  background-color: rgba(0, 0, 0, 0.464);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+}
+nav .menu {
+  display: flex;
+}
+nav .menu .menu-item {
+  padding: 30px;
+}
+nav .menu .menu-item a {
+  font-size: 18px;
+  border: solid;
+  border-radius: 10px;
+  padding: 4px;
+}
+nav .menu .menu-item a:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+  background-color: rgba(0, 0, 0, 0.464);
+}
+
+.wrap {
+  display: flex;
+}
+
+.colr_lightgray {
+  color: lightgray;
+}
+
+.colr_burlywood {
+  color: burlywood;
+}
+
+.colr_sienna {
+  color: sienna;
+}
+
+.colr_plum {
+  color: plum;
+}/*# sourceMappingURL=style.css.map */
