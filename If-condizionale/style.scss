@@ -1,0 +1,44 @@
+$noHover: false;
+
+body {
+  background-color: rgba(0, 0, 0, 0.464);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: 30px;
+      $noHover: false;
+
+      @if $noHover == false {
+        a:hover {   
+          color: #ff0000;
+          border-color: #ff0000; 
+        }
+      }
+      
+      @else {
+        a:hover {   
+          color: white;
+          border-color: white; 
+        }
+      }
+      
+      a {
+        font-size: 18px;
+        color: azure;
+        border: solid;
+        border-color: azure;
+        border-radius: 10px;
+        padding: 4px;
+      }
+    }
+  }
+}
