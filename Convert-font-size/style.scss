@@ -1,0 +1,41 @@
+$primary-color: rgba(0, 0, 0, 0.464);
+$secondary-color: azure;
+$base-font-size: 16px;
+
+@function em($target,$context: $base-font-size) {
+  @return ($target / $context) * 1em;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+
+  .menu {
+    display: flex;
+
+    .menu-item {
+      padding: em(30px);
+      
+      a {
+        font-size: em(18px);
+        color: $secondary-color;
+        border: solid;
+        border-color: $secondary-color;
+        border-radius: em(10px);
+        padding: em(4px);
+      }
+
+      a:hover {
+        color: #ff0000;
+        border-color: #ff0000;       
+        background-color: $primary-color;
+      }
+    }
+  }
+}
