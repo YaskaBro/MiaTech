@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>Non ho capito il metodo parseint</h1>
+    <script>
+      let score = prompt("inserire un numero minore o uguale a 100");
+      const score2 = parseInt(score);
+
+      switch (true) {
+        case score2 <= 100 && score2 >= 90:
+          console.log("voto ottimo");
+          break;
+        case score2 < 90 && score2 >= 70:
+          console.log("voto buono");
+          break;
+        case score2 < 70 && score2 >= 60:
+          console.log("voto sufficient");
+          break;
+        default:
+          console.log("voto insufficiente");
+      }
+    </script>
+  </body>
+</html>
