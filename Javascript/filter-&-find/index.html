@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Sono stato su questo 2 ore perchè ho messo un ; di troppo e mi dava
+      "errore i è indefinito"
+    </h1>
+    <script>
+      let Jacopo = {
+        name: "Jacopo",
+        grade: 70,
+      };
+
+      let Jhon = {
+        name: "Jhon",
+        grade: 50,
+      };
+
+      let Jessica = {
+        name: "Jessica",
+        grade: 80,
+      };
+
+      let students = [Jacopo, Jhon, Jessica];
+
+      let passedStudents = students.filter((student) => student.grade >= 60);
+
+      let notPassed = students.find((student) => student.grade < 60);
+
+      console.log(passedStudents);
+      console.log(notPassed);
+    </script>
+  </body>
+</html>
