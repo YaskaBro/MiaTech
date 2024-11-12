@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>Oggi li faccio tutti filati</h1>
+    <script>
+      class automobile {
+        marca = "";
+        modello = "";
+        anno = 0;
+        chilometraggio = 0;
+
+        constructor(marca, modello, anno, chilometraggio) {
+          this.marca = marca;
+          this.modello = modello;
+          this.anno = anno;
+          this.chilometraggio = chilometraggio;
+        }
+
+        descrizione() {
+          return this.marca + " " + this.modello + " " + this.anno + " " + this.chilometraggio + 'km';
+        }
+
+        aggiungiChilometri(kmDaAggiungere) {
+          return this.chilometraggio = this.chilometraggio + kmDaAggiungere;
+        }
+
+        mostraChilometraggio () {
+          return this.chilometraggio + 'km';
+        }
+      }
+
+      const viper = new automobile("dodge", "viper", 2010, 0);
+
+      console.log(viper.descrizione());
+      
+      viper.aggiungiChilometri(100);
+
+      console.log(viper.descrizione());
+
+      console.log(viper.mostraChilometraggio())
+    </script>
+  </body>
+</html>
