@@ -46,8 +46,9 @@
           return this.#calcolaEtà();
         }
 
-        aggiungiChilometri(kmDaAggiungere) {
-          return (this.chilometraggio = this.chilometraggio + kmDaAggiungere);
+        aggiungiChilometri(km) {         
+          this.#incrementaContatore();
+          return (this.chilometraggio = this.chilometraggio + km);
         }
 
         mostraChilometraggio() {
