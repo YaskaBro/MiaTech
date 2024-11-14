@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Alcuni li faccio subito, altri mi ci incarto 6 anni e mezzo, molto bene!!
+    </h1>
+    <script>
+      const AnnoAttuale = 2024;
+      class Automobile {
+        marca = "";
+        modello = "";
+        anno = 0;
+        chilometraggio = 0;
+
+        #calcolaEtà() {
+          return AnnoAttuale - this.anno;
+        }
+
+        controllaChilometri() {
+          if (this.chilometraggio> 100000) {
+            return 'la macchina ha superato la soglia di km consigliati'
+          }
+          else {
+            return 'la macchina ha ancora pochi chilometri'
+          }
+        }
+
+        constructor(marca, modello, anno, chilometraggio) {
+          this.marca = marca;
+          this.modello = modello;
+          this.anno = anno;
+          this.chilometraggio = chilometraggio;
+        }
+
+        mostraEtà() {
+          return this.#calcolaEtà();
+        }
+
+        aggiungiChilometri(kmDaAggiungere) {
+          return (this.chilometraggio = this.chilometraggio + kmDaAggiungere);
+        }
+
+        mostraChilometraggio() {
+          return this.chilometraggio + "km percorsi";
+        }
+
+        descrizione() {
+          return (
+            this.marca +
+            " " +
+            this.modello +
+            " " +
+            this.anno +
+            " " +
+            this.chilometraggio +
+            "km percorsi"
+          );
+        }
+
+        static confrontaChilometraggio(auto1, auto2) {
+          if (auto1.chilometraggio> auto2.chilometraggio) {
+            return 'la macchina con più chilometri è ' + auto1.modello
+          }
+          else if (auto1.chilometraggio < auto2.chilometraggio) {
+            return 'la macchina con più chilometri è ' + auto2.modello
+          }
+          else {
+            return 'le auto hanno gli stessi km'
+          }
+        }
+      }
+
+      class Elettrica extends Automobile {
+        autonomia = 0;
+
+        constructor(marca, modello, anno, chilometraggio, autonomia) {
+          super(marca, modello, anno, chilometraggio);
+          this.autonomia = autonomia;
+        }
+
+        descrizione() {
+          return (
+            this.marca +
+            " " +
+            this.modello +
+            " " +
+            this.anno +
+            " " +
+            this.chilometraggio +
+            "km percorsi " +
+            this.autonomia +
+            "km di autonomia"
+          );
+        }
+
+        ricarica(kmDaAggiungere) {
+          return (this.autonomia = this.autonomia + kmDaAggiungere);
+        }
+      }
+
+      const viper = new Automobile("dodge", "viper", 2010, 0);
+
+      const gt = new Automobile("mustang", "gt", 2023, 10000);
+
+      viper.aggiungiChilometri(10000);
+
+      const model3 = new Elettrica("tesla", "model 3", 2024, 600, 500);
+
+      model3.ricarica(100);
+
+      Automobile.prototype.saluta = function () {
+        return (
+          "ciao sono la tua " + this.marca + " " + this.modello + " come stai?"
+        );
+      };
+
+      console.log(AnnoAttuale);
+
+      console.log(viper.mostraEtà());
+
+      console.log(model3.controllaChilometri())
+
+      console.log(Automobile.confrontaChilometraggio(gt, viper))
+    </script>
+  </body>
+</html>
