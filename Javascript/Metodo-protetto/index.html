@@ -22,7 +22,7 @@
           return AnnoAttuale - this.anno;
         }
 
-        controllaChilometri() {
+        _controllaChilometri() {
           if (this.chilometraggio> 100000) {
             return 'la macchina ha superato la soglia di km consigliati'
           }
@@ -110,7 +110,7 @@
 
       console.log(viper.mostraEtà());
 
-      console.log(model3.controllaChilometri())
+      console.log(model3._controllaChilometri())
     </script>
   </body>
 </html>

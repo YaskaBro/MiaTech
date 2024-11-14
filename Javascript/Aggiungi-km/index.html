@@ -18,6 +18,13 @@
         chilometraggio = 0;
         #contatoreChiamate = 0;
 
+        constructor(marca, modello, anno, chilometraggio) {
+          this.marca = marca;
+          this.modello = modello;
+          this.anno = anno;
+          this.chilometraggio = chilometraggio;
+        }
+
         #calcolaEtà() {
           return AnnoAttuale - this.anno;
         }
@@ -33,14 +40,7 @@
           else {
             return 'la macchina ha ancora pochi chilometri'
           }
-        }
-
-        constructor(marca, modello, anno, chilometraggio) {
-          this.marca = marca;
-          this.modello = modello;
-          this.anno = anno;
-          this.chilometraggio = chilometraggio;
-        }
+        }      
 
         mostraEtà() {
           return this.#calcolaEtà();

@@ -11,7 +11,7 @@
       sorry Manfredi
     </h1>
     <script>
-      const AnnoAttuale = 2024;
+      const AnnoAttuale = new Date().getFullYear();
       class Automobile {
         marca = "";
         modello = "";
@@ -30,8 +30,7 @@
         }
 
         mostraEtà() {
-          return this.#calcolaEtà();
-          
+          return this.#calcolaEtà();         
         }
 
         aggiungiChilometri(kmDaAggiungere) {

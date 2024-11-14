@@ -25,6 +25,13 @@
         #incrementaContatore() {         
           this.#contatoreChiamate ++
         }
+        
+        set chilometraggio(nuovoChilometraggio) {
+          if (nuovoChilometraggio < this.#chilometraggio) {
+            throw 'stai provando a diminuire i km, non si fa'
+          }
+          this.#chilometraggio = nuovoChilometraggio;
+        }
 
         get chilometraggioAttuale() {
           return 'ha ' + this.#chilometraggio + ' km';
@@ -136,6 +143,10 @@
           "ciao sono la tua " + this.marca + " " + this.modello + " come stai?"
         );
       };
+
+      console.log(viper.chilometraggioAttuale)
+
+      viper.chilometraggio = 10000
 
       console.log(viper.chilometraggioAttuale)
     </script>
