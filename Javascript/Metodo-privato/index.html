@@ -11,18 +11,27 @@
       sorry Manfredi
     </h1>
     <script>
-      const AnnoAttuale = 2024
+      const AnnoAttuale = 2024;
       class Automobile {
         marca = "";
         modello = "";
         anno = 0;
         chilometraggio = 0;
 
+        #calcolaEtà() {
+          return AnnoAttuale - this.anno
+        }
+
         constructor(marca, modello, anno, chilometraggio) {
           this.marca = marca;
           this.modello = modello;
           this.anno = anno;
           this.chilometraggio = chilometraggio;
+        }
+
+        mostraEtà() {
+          return this.#calcolaEtà();
+          
         }
 
         aggiungiChilometri(kmDaAggiungere) {
@@ -44,11 +53,6 @@
             this.chilometraggio +
             "km percorsi"
           );
-        }
-
-        static calcolaEtà(Automobile) {
-          return AnnoAttuale - Automobile.anno
-          
         }
       }
 
@@ -88,13 +92,15 @@
 
       model3.ricarica(100);
 
-      Automobile.prototype.saluta = function() {
-        return 'ciao sono la tua ' + this.marca + ' ' + this.modello + ' come stai?'
-      }
-      
-      console.log (AnnoAttuale);
+      Automobile.prototype.saluta = function () {
+        return (
+          "ciao sono la tua " + this.marca + " " + this.modello + " come stai?"
+        );
+      };
 
-      console.log (Automobile.calcolaEtà(viper));
+      console.log(AnnoAttuale);
+
+      console.log(viper.mostraEtà());
     </script>
   </body>
 </html>
