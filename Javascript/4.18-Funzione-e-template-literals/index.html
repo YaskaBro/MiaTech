@@ -11,11 +11,21 @@
       meglio, sappilo!!!
     </h1>
     <script>
-      const fruttiJson = '{"chiave1": "banane","chiave2" : "pere", "chiave3" : "mele","chiave4" : "meloni"}';
+      let jacopo = {
+        nome: "Jacopo",
+        cognome: "Agresta",
+        eta: "31",
+        citta: "Roma",
+      };
 
-      const defruttati = JSON.parse(fruttiJson)
-      
-      console.log(defruttati);
+      function scrittura(persona) {
+        return `
+      Ciao ${persona.nome} ${persona.cognome}
+      hai ${persona.eta} anni
+      vieni da ${persona.citta}!`;
+      }
+
+      console.log(scrittura(jacopo));
     </script>
   </body>
 </html>
