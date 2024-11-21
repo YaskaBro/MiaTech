@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Buona settimana manfredi, non ho voglio di fare nulla, ma farò del mio
+      meglio, sappilo!!!
+    </h1>
+    <script>
+      
+      const jacopo = {
+        name : "jacopo",
+        age  : 31,
+        mansion : "student"
+      }
+
+      const max = {
+        name : "massimiliano",
+        age  : 31,
+        mansion : "impiegato"
+      }
+
+      const andrea = {
+        name : "andrea",
+        age  : 30,
+        mansion : "psicologo"
+      }
+
+      const persone = [ jacopo, max, andrea]
+      
+      const personeJson = JSON.stringify(persone)
+
+      const gennaro = {
+        name : "gennaro",
+        age  : 50,
+        mansion : "pizzaiolo"
+      }
+
+      persone.push(gennaro);
+
+
+      const persone2Json = JSON.stringify(persone)
+      
+      console.log(persone2Json);
+    </script>
+  </body>
+</html>
