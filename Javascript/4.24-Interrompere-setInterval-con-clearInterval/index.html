@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Buona settimana manfredi, non ho voglio di fare nulla, ma farò del mio
+      meglio, sappilo!!!
+    </h1>
+    <script>
+      const pippo = function () {
+        console.log("sono passati 1 secondi");
+      };
+
+      const timer = setInterval(pippo, 1000);
+
+      setTimeout(function () {
+        clearInterval(timer);
+      }, 5000);
+    </script>
+  </body>
+</html>
