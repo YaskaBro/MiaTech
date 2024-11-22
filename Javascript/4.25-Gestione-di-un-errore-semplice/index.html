@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Buona settimana manfredi, non ho voglio di fare nulla, ma farò del mio
+      meglio, sappilo!!!
+    </h1>
+    <script>
+      function eseguiDivisione(dividendo, divisore) {
+        try {
+          if (divisore === 0) {
+            throw new Error("Errore: il divisore non può essere zero.");
+          }
+          let risultato = dividendo / divisore;
+          console.log(`Risultato: ${risultato}`);
+        } catch (errore) {
+          console.error("Si è verificato un errore:", errore.message);
+        }
+      }
+
+      let a = 10;
+      let b = 0;
+
+      eseguiDivisione(a, b);
+    </script>
+  </body>
+</html>
