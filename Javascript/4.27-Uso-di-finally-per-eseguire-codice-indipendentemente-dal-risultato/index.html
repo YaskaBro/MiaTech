@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>Non avevo fantasia, ho capito l'esercizio</h1>
+    <script>
+      function eseguiOperazione(dividendo, divisore) {
+        try {
+          if (typeof dividendo !== "number" || typeof divisore !== "number") {
+            throw new Error("Errore: i valori forniti devono essere numeri.");
+          }
+
+          if (divisore === 0) {
+            throw new Error("Errore: il divisore non può essere zero.");
+          }
+
+          let risultato = dividendo / divisore;
+          console.log(`Risultato: ${risultato}`);
+        } catch (errore) {
+          console.error("Si è verificato un errore:", errore.message);
+        } finally {
+          console.log("Operazione completata.");
+        }
+      }
+
+      let a = 10
+      let b = 0
+
+      eseguiOperazione(a, b)
+    </script>
+  </body>
+</html>
