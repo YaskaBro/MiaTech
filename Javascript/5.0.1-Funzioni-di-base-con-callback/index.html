@@ -13,16 +13,17 @@
     <script>
       function sottrazione(a, b, callback) {
         const risultato = a - b;
-        callback?.(risultato);
+        console.log(risultato);
+        callback?.();
       }
 
-      function callback(risultato) {
+      function messaggio() {
         console.log(
-          `ci sono riuscito? il risultato dovrebbe essere ${risultato}`
+          `operazione eseguita`
         );
       }
 
-      sottrazione(10, 7, callback);
+      sottrazione(10, 7, messaggio);
     </script>
   </body>
 </html>

@@ -11,11 +11,18 @@
       quei bastardi come marketing è una cosa assurda!!!!
     </h1>
     <script>
-      function principale(a, b, parametroC){
-        const risultato = a * b;
+      function sottrazione(a, b, callback) {
+        const risultato = a - b;
+        callback?.(risultato);
       }
-      
-      function parametroC()
+
+      function messaggio(finale) {
+        console.log(
+          `il risultato è ${finale}`
+        );
+      }
+
+      sottrazione(10, 7, messaggio);
 
     </script>
   </body>
