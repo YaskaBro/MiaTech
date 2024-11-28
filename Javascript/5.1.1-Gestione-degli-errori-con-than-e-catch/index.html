@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Proviamo le promise, sono fiducioso!! Ho deciso di tenermi una parte con
+      la costruzione base e di modificare quella ogni volta, quindi gli esercizi
+      avranno una parte con la sintassi generica e una con quella applicata,
+      spero non sia un problema. Grazie :)
+    </h1>
+    <script>
+      /*const miaPromise = new Promise((resolve, reject) => {
+        // Corpo della funzione
+        let successo = false; // Simulazione di una condizione
+
+        if (successo) {
+          resolve("Operazione riuscita!"); // Risolve la promise
+        } else {
+          reject("Operazione fallita"); // Rifiuta la promise
+        }
+      });
+
+      // Utilizzo di una Promise
+      miaPromise
+        .then((risultato) => {
+          console.log(risultato); // Viene eseguito se la promise è risolta
+        })
+        .catch((errore) => {
+          console.log(errore); // Viene eseguito se la promise è rifiutata
+        })
+        .finally(() => {
+          console.log("Promise completata."); // Eseguito in ogni caso
+        });
+        */
+
+      //inizio dell' esercizio
+
+      function numero(parametro) {
+        return new Promise((resolve, reject) => {
+          if (parametro === true) {
+            resolve("Il parametro passato è vero");
+          } else {
+            reject("Il parametro passato è falso");
+          }
+        });
+      }
+
+      numero(true)
+      .then((risultato) => {
+        console.log(risultato);
+      })
+      .catch((errore)=> {
+        console.error(errore)
+      })
+
+    </script>
+  </body>
+</html>
