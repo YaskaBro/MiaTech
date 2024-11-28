@@ -39,38 +39,25 @@
 
       //inizio dell' esercizio
 
-      function numeroUnSecondo() {
-        let successo = true;
+      function numero() {
+        let successo = 5;
         return new Promise((resolve, reject) => {
-          if (successo === true) {
-            setTimeout(() => {
-              resolve(4);
-            }, 1000);
+          if (successo > 5) {
+            resolve("Il numero è sufficiente");
           } else {
-            reject("Operazione inziale fallita!");
+            reject("Il numero non è sufficiente");
           }
         });
       }
 
-      numeroUnSecondo()
-        .then(function (risultato) {
-          console.log(risultato);
+      numero()
+      .then((risultato) => {
+        console.log(risultato);
+      })
+      .catch((errore)=> {
+        console.error(errore)
+      })
 
-          return new Promise((resolve, reject) => {
-            
-            if (risultato % 2 == 0) {
-              resolve(risultato / 2);
-            } else {
-              reject(risultato * 2);
-            }
-          });
-        })
-        .then(function (altroRisultato) {
-          console.log(altroRisultato);
-        })
-        .catch((errore) => {
-          console.log(errore); // Viene eseguito se la promise è rifiutata
-        })
     </script>
   </body>
 </html>
