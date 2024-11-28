@@ -53,8 +53,8 @@
       }
 
       function funzione2() {
-        let parametro2 = 3;
-        return new Promise((resolve, reject) => {
+        let parametro2 = true;
+        return new Promise((resolve, rejext) => {
           if ((parametro2 === true)) {
             setTimeout(() => {
               resolve("Va bene");
@@ -67,8 +67,8 @@
         });
       }
 
-      Promise.race([funzione1(), funzione2()]).then(function (value) {
-        console.log(value);
+      Promise.race([funzione1(), funzione2()]).then(function (tuttiRisultati) {
+        console.log(tuttiRisultati);
       });
     </script>
   </body>

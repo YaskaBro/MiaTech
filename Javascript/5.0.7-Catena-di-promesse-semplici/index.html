@@ -67,6 +67,8 @@
         })
         .then(function (altroRisultato) {
           console.log(altroRisultato);
+        }).catch((errore) => {
+          console.log(errore); // Viene eseguito se la promise è rifiutata
         });
     </script>
   </body>
