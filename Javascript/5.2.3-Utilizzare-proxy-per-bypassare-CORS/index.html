@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Ok quì mi sono un pochino perso.
+      Io te l' ho consegnato ma bastonami pure sapendo che non ho capito bene come usarlo.
+      SCUSA
+    </h1>
+    <script>
+      function richiestaGet() {
+        fetch("https://cors-anywhere.herokuapp.com/http://client.cors-api.appspot.com/client", {
+          method: "GET",
+        })
+          .then((response) => response.json())
+          .then((json) => console.log("Dati ricevuti: ", json));
+      }
+
+      richiestaGet();
+    </script>
+  </body>
+</html>
