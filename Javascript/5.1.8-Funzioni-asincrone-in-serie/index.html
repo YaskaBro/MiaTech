@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Ho provato a snellire il codice rispetto alla fonte linkata nella lezione
+    </h1>
+    <script>
+      function promessaDueSecondi(successo) {
+        return new Promise((resolve, reject) => {
+          if (successo === true) {
+            setTimeout(() => {
+              resolve("Operazione due secondi riuscita!"); // Risolve la promise
+            }, 2000);
+          } else {
+            reject("Operazione due secondi fallita"); // Rifiuta la promise
+          }
+        });
+      }
+
+      async function fornisciMessagioDue(successo) {
+        try {
+          const messaggio2 = await promessaDueSecondi(successo);
+          return messaggio2;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      function promessaCinqueSecondi(successo) {
+        return new Promise((resolve, reject) => {
+          if (successo === true) {
+            setTimeout(() => {
+              resolve("Operazione cinque secondi riuscita!"); // Risolve la promise
+            }, 5000);
+          } else {
+            reject("Operazione cinque secondi fallita"); // Rifiuta la promise
+          }
+        });
+      }
+
+      async function fornisciMessagioCinque(successo) {
+        try {
+          const messaggio5 = await promessaCinqueSecondi(successo);
+          return messaggio5;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      async function fornisciMessaggiofinale(successo) {
+        try {
+          const [messaggio2, messaggio5] = await Promise.all([
+            fornisciMessagioDue(successo),
+            fornisciMessagioCinque(successo),
+          ]);
+
+          console.log(messaggio2);
+          console.log(messaggio5);
+        } catch (error) {
+          console.error("Errore nella funzione finale: ", error);
+        }
+      }
+
+      fornisciMessaggiofinale(true);
+    </script>
+  </body>
+</html>
