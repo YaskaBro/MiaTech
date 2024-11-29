@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Ho provato a snellire il codice rispetto alla fonte linkata nella lezione
+    </h1>
+    <script>
+      function richiestaPOST() {
+        fetch("https://reqres.in/api/users", {
+          method: "POST",
+          headers: {
+            "Content-Type" : "application/json"
+          },
+          body: JSON.stringify({
+            name: "user Jako",
+          }),
+        })
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => console.log(data))
+          .catch((error) => console.log("ERROR"));
+      }
+
+      richiestaPOST();
+    </script>
+  </body>
+</html>
