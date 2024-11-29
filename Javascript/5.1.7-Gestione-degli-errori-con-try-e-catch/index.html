@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Ho provato a snellire il codice rispetto alla fonte linkata nella lezione
+    </h1>
+    <script>
+      function promessaDueSecondi(successo) {
+        return new Promise((resolve, reject) => {
+          if (successo === true) {
+            setTimeout(() => {
+              resolve("Operazione riuscita!"); // Risolve la promise
+            }, 2000);
+          } else {
+            reject("Operazione fallita"); // Rifiuta la promise
+          }
+        });
+      }
+
+      async function fornisciMessagio(successo) {
+        try {
+          const messaggio = await promessaDueSecondi(successo);
+          console.log(messaggio);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      fornisciMessagio(true);
+      fornisciMessagio(false);
+    </script>
+  </body>
+</html>
