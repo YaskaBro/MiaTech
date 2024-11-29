@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizi Javascript</title>
+  </head>
+  <body>
+    <h1>
+      Ho provato a snellire il codice rispetto alla fonte linkata nella lezione
+    </h1>
+    <script>
+      async function richiestaGET() {
+        try {
+          await fetch("https://reqres.in/api/users")
+            .then((res) => {
+              return res.json();
+            })
+            .then((data) => console.log(data));
+        } catch (error) {
+          console.error("ERROR");
+        }
+      }
+
+      richiestaGET();
+    </script>
+  </body>
+</html>
