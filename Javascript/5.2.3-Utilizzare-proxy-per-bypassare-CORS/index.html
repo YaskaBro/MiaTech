@@ -12,15 +12,21 @@
       SCUSA
     </h1>
     <script>
-      function richiestaGet() {
-        fetch("https://cors-anywhere.herokuapp.com/http://client.cors-api.appspot.com/client", {
-          method: "GET",
-        })
-          .then((response) => response.json())
-          .then((json) => console.log("Dati ricevuti: ", json));
+      const apiURL = "http://client.cors-api.appspot.com/client"
+      
+      const proxyURL = "https://cors-anywhere.herokuapp.com/"
+      
+      const requestURL = proxyURL + apiURL
+      async function fetchData() {
+      const response = await fetch(requestURL, {
+            method: "GET",
+        });
+        
+        const data = await response.json();
+        console.log("Risultato:", data);
       }
 
-      richiestaGet();
+      fetchData();
     </script>
   </body>
 </html>
