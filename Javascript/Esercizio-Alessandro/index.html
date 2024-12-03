@@ -11,11 +11,16 @@
       sapendo che non ho capito bene come usarlo. SCUSA
     </h1>
     <script>
-      const apiURL = "https://pokeapi.co/api/v2/pokemon/rattata";
-      async function fetchData() {
-        const response = await fetch(apiURL);
-        const data = await response.json();
-        console.log(data);
+      const API_URL = "https://jsonplaceholder.typicode.com/comments";
+      const fetchData= async () => {
+        try {
+          const response = await fetch(API_URL);
+
+          const result = await response.json();
+          console.log(response)
+        } catch (error) {
+          console.log(error)
+        }
       }
 
       fetchData();
