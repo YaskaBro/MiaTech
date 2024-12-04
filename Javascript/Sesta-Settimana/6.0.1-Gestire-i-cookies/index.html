@@ -8,7 +8,8 @@
   <body>
     <h1>Una nuova entusiasmante settimana, iniziamo con i cookie</h1>
     <script>
-        document.cookie = "Nome=John Doe; path=/";
+        document.cookie = "Nome= John Doe; expires= Thu, 06 Dec 2024 00:00:00 UTC; path=/";
+        console.log(document.cookie)
 
         function addGetDelete(azione, cname, cvalue) {
             if (azione === "aggiungi") {

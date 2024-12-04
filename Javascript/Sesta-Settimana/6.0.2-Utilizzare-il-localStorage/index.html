@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesta settimana Javascript</title>
+  </head>
+  <body>
+    <h1>Una nuova entusiasmante settimana, iniziamo con i cookie</h1>
+    <script>
+        function allInOne(operazione, categoria, oggetto) {
+          if (operazione === "aggiungi") {
+            localStorage.setItem(categoria, oggetto)
+            console.log(localStorage)
+          } else if (operazione === "controlla") {
+            console.log(localStorage.getItem(categoria))
+          } else if (operazione === "cancella") {
+            localStorage.removeItem(categoria) 
+            console.log(localStorage)  
+          } else {
+            console.error("Operazione non valida, scegli fra aggiungi-controlla-cancella")
+          }
+        }
+
+        allInOne("cancella", "persona",)
+
+        document.write(localStorage.persona)
+    </script>
+  </body>
+</html>
