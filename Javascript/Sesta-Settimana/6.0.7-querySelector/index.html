@@ -20,7 +20,7 @@
     </p>
     <script>
       const elementH2 = document.querySelector("#primo")
-      const elementH2Tutti = document.querySelectorAll('h2')
+      const elementH2Tutti = Array.from(document.querySelectorAll('h2'))
       console.log("questo è per selezionarne uno solo", elementH2)
       console.log("questo è per selezionarli tutti", elementH2Tutti)
     </script>

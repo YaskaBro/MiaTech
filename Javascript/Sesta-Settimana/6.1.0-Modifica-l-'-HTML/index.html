@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sesta settimana Javascript</title>
-    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>Ora manipolo il dom</h1>
@@ -16,15 +15,9 @@
       tempora!
     </p>
     <script>
-      const elementP = document.getElementsByTagName('p')[0];
+      const elementP = document.querySelector('p');
 
-      /* 
-      elementP.style.backgroundColor = "purple";
-      elementP.style.fontSize = "16px"
-      */
-
-      elementP.classList.add("paragrafo")
-
+      elementP.innerHTML += "<button>Bottone biriccone</button>";
     </script>
   </body>
 </html>
