@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesta settimana Javascript</title>
+</head>
+
+<body>
+    <h1>Ora manipolo il dom</h1>
+    <p>
+    <form action="/submit" method="post" id="form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br />
+
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+    </p>
+    <script>
+        const $nome = document.querySelector("#nome");
+        const $cognome = document.querySelector("#cognome");
+        const $form = document.querySelector("#form");
+
+        $form.addEventListener("submit", (event) => {
+            event.preventDefault()
+
+
+            console.log("Nome:", $nome.value);
+            console.log("Cognome:", $cognome.value);
+        })
+    </script>
+</body>
+
+</html>
