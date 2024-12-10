@@ -28,7 +28,10 @@
 
         $form.addEventListener("submit", (event) => {
             event.preventDefault()
-
+            if ($nome.value === "" || $cognome.value === "" ) {
+                alert ("Non hai compilato tutti i campi del form feccia")
+                return
+            }
 
             console.log("Nome:", $nome.value);
             console.log("Cognome:", $cognome.value);
