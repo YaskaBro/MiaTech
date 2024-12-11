@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF78AC',
+                        secondary: '#F2F0EA'
+                    }
+                } 
+            }
+        }
+    </script>
+
 </head>
 <body>
-    <div class="container mx-auto bg-primary text-center mb-4 p-32">
+    <div class="container mx-auto bg-secondary text-center mb-4 p-32">
         <h1 class="font-bold text-3xl text-orange-500 leading-relaxed">Settimana tailwind non ti temo!</h1>
-        <p class="text-center bg-secondary p-4 text-2xl text-white">Mamma mia sto tailwind</p>
+        <p class="text-center bg-primary p-4 text-2xl text-white">Mamma mia sto tailwind</p>
         <ul class="text-3xl text-grey-800">lista di colori
             <li class="text-blue-500">blu</li>
             <li class="text-yellow-500">giallo</li>
