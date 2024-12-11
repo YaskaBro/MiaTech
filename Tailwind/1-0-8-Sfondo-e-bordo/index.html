@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Tema Personalizzato</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#FF9800',
+                        accent: '#673AB7',
+                    },
+                    fontSize: {
+                        'tiny': '0.625rem',
+                        'massive': '10rem',
+                    },
+                    spacing: {
+                        '13': '3.25rem',
+                        '72': '18rem',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        'huge': '3rem',
+                    },
+                    fontFamily: {
+                        'custom': ['"Comic Sans MS"', 'cursive'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container mx-auto bg-secondary text-center p-13 rounded-xl">
+        <button class="bg-primary text-massive rounded-xl font-custom">uno</button>
+        <button class="bg-primary text-massive rounded-xl font-custom">due</button>
+        <button class="bg-primary text-massive rounded-xl font-custom">tre</button>
+        <button class="bg-primary text-massive rounded-xl font-custom">quattro</button>
+        <button class="bg-primary text-massive rounded-xl font-custom">cinque</button>
+    </div>
+    <div class="bg-accent rounded-xl">
+        <p class="container mx-auto bg-secondary rounded-huge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio,
+            necessitatibus molestiae nisi iste
+            quae ipsa similique nulla ex voluptatem, a dolores exercitationem autem totam deleniti in asperiores
+            tenetur? Molestias?</p>
+    </div>
+    <p class="bg-primary text-3xl text-center container mx-auto rounded-huge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque expedita, ex fugiat
+        temporibus accusantium, reiciendis ipsa quaerat sit dolor neque fuga omnis. Fuga non aperiam sequi beatae id
+        laudantium!</p>
+</body>
+
+</html>
