@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind Tema Personalizzato</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#4CAF50', 
+                            secondary: '#FF9800', 
+                            accent: '#673AB7',
+                        },
+                        fontSize: {
+                            'tiny': '0.625rem', 
+                            'massive': '10rem', 
+                        },
+                        spacing: {
+                            '13': '3.25rem',
+                            '72': '18rem', 
+                        },
+                        borderRadius: {
+                            'xl': '1rem', 
+                            'huge': '3rem', 
+                        },
+                        fontFamily: {
+                            'custom': ['"Comic Sans MS"', 'cursive'], 
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    
+    <body>
+        <div class="container mx-auto bg-secondary text-center p-13 rounded-xl">
+            <h1 class="font-bold text-massive text-primary leading-tight font-custom">
+                Tailwind Personalizzato
+            </h1>
+            <p class="bg-primary text-secondary text-tiny p-72 rounded-huge font-custom">
+                Questo è un paragrafo con un tema personalizzato!
+            </p>
+            <ul class="text-3xl text-gray-800 mt-13 font-custom">
+                <li class="text-accent">Colore viola (accent)</li>
+                <li class="text-primary">Colore verde (primary)</li>
+                <li class="text-secondary">Colore arancione (secondary)</li>
+            </ul>
+        </div>
+    </body>
+</html>

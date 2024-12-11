@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF78AC',
+                        secondary: '#F2F0EA',
+                    },
+                    spacing: {
+                        '10': '2.5rem',
+                        '20': '5rem',
+                    },
+                    fontSize: {
+                        '9xl': '8rem',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container mx-auto bg-secondary text-center mb-10 p-32">
+        <h1 class="font-bold text-8xl text-orange-500 leading-relaxed">Settimana tailwind non ti temo!</h1>
+        <p class="text-center bg-primary p-20 text-9xl text-white">Mamma mia sto tailwind</p>
+        <ul class="text-3xl text-gray-800">Lista di colori
+            <li class="text-blue-500">blu</li>
+            <li class="text-yellow-500">giallo</li>
+            <li class="text-green-500">verde</li>
+            <li class="text-red-500">rosso</li>
+            <li class="text-purple-500">viola</li>
+        </ul>
+    </div>
+</body>
+
+</html>
