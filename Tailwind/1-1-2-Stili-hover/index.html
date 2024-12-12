@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questi sono i miei colori</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#FF9800',
+                        accent: '#673AB7',
+                        muted: '#9E9E9E',
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body >
+    <div class="block rounded-lg bg-white p-6 shadow-md dark:bg-neutral-700">
+        <button class="bg-neutral-700 hover:bg-neutral-900 text-white text-xl" >bottoncino biricchino</button>
+        <button class="bg-neutral-700 hover:bg-yellow-900 text-white text-xl" >bottoncino biricchino</button>
+        <button class="bg-neutral-700 hover:bg-red-900 text-white text-xl" >bottoncino biricchino</button>
+        <button class="bg-neutral-700 hover:bg-blue-900 text-white text-xl" >bottoncino biricchino</button>
+    </div>
+</body>
+
+</html>
