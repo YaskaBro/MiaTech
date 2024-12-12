@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questi sono i miei colori</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'media',
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#4CAF50', 
+                            secondary: '#FF9800', 
+                            accent: '#673AB7', 
+                            muted: '#9E9E9E', 
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body >
+        <div class="block rounded-lg bg-white p-6 shadow-md dark:bg-neutral-700">
+        <h5
+          class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Light mode
+        </h5>
+        <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+          Dark mode reduces eye strain in low-light conditions, saves energy on
+          OLED screens, and offers a visually refreshing aesthetic.
+        </p>
+      </div>
+    </body>
+</html>
