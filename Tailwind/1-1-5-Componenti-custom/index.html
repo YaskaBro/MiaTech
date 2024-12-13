@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questi sono i miei colori</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#FF9800',
+                        accent: '#673AB7',
+                        muted: '#9E9E9E',
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .para {
+                border: 2px solid slateblue;
+                border-radius: 4px;
+            }
+
+            .para-standard {
+                @apply para  bg-secondary
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione, debitis placeat sit
+        aperiam obcaecati
+        incidunt doloremque consequuntur ea non.
+    </p>
+    <p class="para-standard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione, debitis placeat
+        sit aperiam obcaecati
+        incidunt doloremque consequuntur ea non.
+    </p>
+</body>
+
+</html>
