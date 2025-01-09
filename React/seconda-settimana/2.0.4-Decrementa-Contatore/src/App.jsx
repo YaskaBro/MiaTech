@@ -8,7 +8,8 @@ const App = () => {
     }
 
     const decrement = () => {
-        setncounter(ncounter - 1)
+        setncounter((_ncounter) => {
+            return _ncounter - 1})
     }
 
     return (
