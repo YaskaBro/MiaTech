@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { useFetch } from "../hooks/useFetch";
-import { addTodo } from "../store/TodoSlice";
+import { addTodo, completeTodo } from "../store/TodoSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useSearchParams } from "react-router-dom";
 
@@ -38,18 +38,24 @@ function TodoList() {
         inputRef.current.focus()
     }, [])
 
+    const handleComplete = (todo) => {
+        dispatch(completeTodo({ id: todo.id }));
+    };
+
     return (
         <div>
             {loading && <p>Caricamento in corso...</p>}
             {error && <p>Si è verificato un errore: {error.message}</p>}
-
             Filtra: <input ref={inputRef} type="text" value={inputValue} onChange={handleChange} />
             <ul>
-                {filtrati && filtrati.map((todo) => (
+                {todos.map(todo => (
                     <li key={todo.id}>
-                        <Link to={`/todo/${todo.id}`}>
-                            user id: ({todo.userId}) id del post: ({todo.id}) titolo: "{todo.title}"
-                        </Link>
+                        <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+                            {todo.title}
+                        </span>
+                        <button onClick={() => handleComplete(todo)} disabled={todo.completed}>
+                            {todo.completed ? 'Completed' : 'Mark as Complete'}
+                        </button>
                     </li>
                 ))}
             </ul>
