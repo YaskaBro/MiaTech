@@ -19,3 +19,4 @@ console.log(getUserTodos(123));
 var throwError = function (message) {
     throw new Error(message);
 };
+throwError("ciao");

@@ -33,6 +33,10 @@ const parseInput = (input: unknown): string => {
     } else if (typeof input=== "number") {
         return input.toString()
     } else {
-        throw new Error (`Input non valido: ${input}`)  as never;
+        throw new Error (`Input non valido: ${input}`) as never;
     }
 }
+
+throwError("ciao")
+
+parseInput("ciao")

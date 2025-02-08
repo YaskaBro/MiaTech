@@ -19,3 +19,16 @@ console.log(getUserTodos(123));
 var throwError = function (message) {
     throw new Error(message);
 };
+var parseInput = function (input) {
+    if (typeof input === "string") {
+        return input;
+    }
+    else if (typeof input === "number") {
+        return input.toString();
+    }
+    else {
+        throw new Error("Input non valido: ".concat(input));
+    }
+};
+throwError("ciao");
+parseInput("ciao");

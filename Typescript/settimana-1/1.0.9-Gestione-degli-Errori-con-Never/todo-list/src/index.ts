@@ -26,3 +26,5 @@ console.log(getUserTodos(123));
 const throwError = (message?: string):never  => {
     throw new Error (message)
 }
+
+throwError("ciao")
