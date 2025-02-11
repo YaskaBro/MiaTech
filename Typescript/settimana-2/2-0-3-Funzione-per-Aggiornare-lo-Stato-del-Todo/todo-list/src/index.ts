@@ -54,3 +54,8 @@ const getTodoSummary = (todo: Todo): [string, boolean] => {
 const createProject = (users: User[], todos: Todo[]): Project =>{
     return { users, todos };
 }
+
+const updateTodoStatus = (todoId :number , status: Todostatus) => {
+    const foundTodo = todos.find((todo)=>todo.id = todoId);
+    if (foundTodo){foundTodo.status = status}
+}
