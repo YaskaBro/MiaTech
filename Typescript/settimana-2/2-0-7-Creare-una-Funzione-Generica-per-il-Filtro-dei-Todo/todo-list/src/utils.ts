@@ -1,5 +1,5 @@
 import { Todo } from "./types";
 
-function filterTodos(todos: Todo[], filterFn: (todo: Todo) => boolean): Todo[] {
+function filterTodos<T>(todos: T[], filterFn: (todo: T) => boolean): T[] {
     return todos.filter(filterFn);
 }
